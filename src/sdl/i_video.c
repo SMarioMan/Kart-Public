@@ -1795,6 +1795,8 @@ static SDL_bool Impl_CreateWindow(SDL_bool fullscreen)
 		SDL_RenderSetLogicalSize(renderer, BASEVIDWIDTH, BASEVIDHEIGHT);
 	}
 
+	SDL_SetHint(SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS, "1");
+
 	return SDL_TRUE;
 }
 
